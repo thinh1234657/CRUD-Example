@@ -19,9 +19,9 @@
 
     <!-- Custom styles for this template -->
     <link href="/assets/css/sb-admin-2.min.css" rel="stylesheet">
-
+    <link href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
     <!-- Custom styles for this page -->
-    <link href="//assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -170,7 +170,11 @@
 
     <!-- Page level custom scripts -->
     <script src="/assets/js/demo/datatables-demo.js"></script>
+    <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js">
 
+$(document).ready( function () {
+    $('#example1').DataTable();
+} );
 </body>
 
 </html>
