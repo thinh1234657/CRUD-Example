@@ -19,3 +19,8 @@ Route::get('/', function () {
 
 Route::resource('categories', \App\Http\Controllers\CategoryController::class);
 Route::resource('products', \App\Http\Controllers\ProductController::class);
+
+
+Route::get('pay' , 'App\Http\Controllers\PayOrderController@store');
+Route::get('account' , 'App\Http\Controllers\AccountController@store');
+Route::get('payment-form','App\Http\Controllers\PaymentFormController@store');
